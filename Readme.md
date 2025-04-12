@@ -35,3 +35,22 @@ A full-featured Job Portal web application built using the MERN stack (MongoDB, 
 - CORS, Dotenv
 
 ---
+
+### How to run:
+
+# Backend
+cd server
+npm install
+
+# Frontend
+cd ../client
+npm install
+
+# Run backend
+cd server
+npm start
+
+# Run frontend (in a new terminal)
+cd client
+npm run dev
+
