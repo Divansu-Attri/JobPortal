@@ -9,7 +9,7 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('/api/auth/login', formData);
+      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
       localStorage.setItem('token', res.data.token);
       alert('Login Successful');
     } catch (err) {

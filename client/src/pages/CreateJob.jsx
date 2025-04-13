@@ -10,7 +10,7 @@ const CreateJob = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('/api/jobs', formData, {
+      await axios.post('http://localhost:5000/api/jobs/createJob', formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert('Job created');
